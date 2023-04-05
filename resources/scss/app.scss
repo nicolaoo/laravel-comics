@@ -1,1 +1,59 @@
 @import '~bootstrap/scss/bootstrap';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul,
+ol,
+menu {
+    list-style: none;
+}
+
+
+// HEADER //
+
+header {
+    background-color: gray;
+}
+
+.row-head {
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    ul {
+        display: flex;
+        gap: 15px;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+
+        li {
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+    }
+
+    figure {
+        margin: 0;
+        padding: 0;
+    }
+}
