@@ -62,3 +62,27 @@ menu {
     object-fit: cover;
     object-position: top;
 }
+
+.back-grd {
+    background-color: rgb(24, 23, 22);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    padding: 50px 0;
+}
+
+.cardDc {
+    p {
+        margin: 10px 0;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    img {
+        aspect-ratio: 8/12;
+        object-fit: cover;
+    }
+}
