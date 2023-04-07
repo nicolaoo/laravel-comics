@@ -214,6 +214,29 @@ $comics = [
     ],
 ];
 
+$comic_details = [
+    [
+        "title" => "digital comics",
+        "url" => "{{ Vite::asset('resources/images/buy-comics-digital-comics.png') }}",
+    ],
+    [
+        "title" => "dc merchandise",
+        "url" => "{{ Vite::asset('resources/images/buy-comics-merchandise.png') }}",
+    ],
+    [
+        "title" => "subscription",
+        "url" => "{{ Vite::asset('resources/images/buy-comics-shop-locator.png') }}",
+    ],
+    [
+        "title" => "comic shop locator",
+        "url" => "{{ Vite::asset('resources/images/buy-comics-subscriptions.png') }}",
+    ],
+    [
+        "title" => "dc power visa",
+        "url" => "{{ Vite::asset('resources/images/buy-dc-power-visa.svg') }}",
+    ]
+]
+
 ?>
 <main>
     <section>
@@ -223,6 +246,9 @@ $comics = [
             </figure>
         </div>
         <div class="back-grd">
+            <button>
+                load more
+            </button>
             <div class="grid">
                 @foreach($comics as $comic)
                 <div class="cardDc">
@@ -231,17 +257,18 @@ $comics = [
                 </div>
                 @endforeach
             </div>
+            <button>
+                load more
+            </button>
         </div>
-        <div>
-            <ul>
+        <div class="back-info">
+            <ul class="grid-info">
+                @foreach($comic_details as $info)
                 <li>
-                    <img src="" alt="">
-                    <p>digital comics</p>
+                    <img src="{{ $info['url'] }}" alt="">
+                    <p>{{$info['title']}}</p>
                 </li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                @endforeach
             </ul>
         </div>
     </section>

@@ -86,3 +86,19 @@ menu {
         object-fit: cover;
     }
 }
+
+.grid-info {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 50px 0;
+
+    p {
+        color: white;
+        text-transform: uppercase;
+    }
+}
+
+.back-info {
+    background-color: #0074e8;
+}
