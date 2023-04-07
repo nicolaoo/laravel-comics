@@ -267,7 +267,7 @@ $comic_details = [
         <div class="back-info">
             <div class="container">
 
-                <ul class="grid-info">
+                <ul class="grid-info mb-0">
                     @foreach($comic_details as $info)
                     <li>
                         <img src="{{ $info['url'] }}" alt="">
