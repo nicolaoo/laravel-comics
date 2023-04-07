@@ -246,7 +246,7 @@ $comic_details = [
             </figure>
         </div>
         <div class="back-grd">
-            <div class="container">
+            <div class="container positions">
 
                 <button class="btn-up-grid">
                     current series
