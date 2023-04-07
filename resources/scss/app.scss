@@ -82,8 +82,9 @@ menu {
     }
 
     img {
-        aspect-ratio: 8/12;
         object-fit: cover;
+        height: 80%;
+        aspect-ratio: 8/12;
     }
 }
 
@@ -102,3 +103,5 @@ menu {
 .back-info {
     background-color: #0074e8;
 }
+
+// FOOTER //

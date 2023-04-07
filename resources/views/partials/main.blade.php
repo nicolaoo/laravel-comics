@@ -246,30 +246,36 @@ $comic_details = [
             </figure>
         </div>
         <div class="back-grd">
-            <button>
-                load more
-            </button>
-            <div class="grid">
-                @foreach($comics as $comic)
-                <div class="cardDc">
-                    <img src="{{ $comic['thumb'] }}" alt="">
-                    <p>{{$comic['series']}}</p>
+            <div class="container">
+
+                <button>
+                    load more
+                </button>
+                <div class="grid">
+                    @foreach($comics as $comic)
+                    <div class="cardDc">
+                        <img src="{{ $comic['thumb'] }}" alt="">
+                        <p>{{$comic['series']}}</p>
+                    </div>
+                    @endforeach
                 </div>
-                @endforeach
+                <button>
+                    load more
+                </button>
             </div>
-            <button>
-                load more
-            </button>
         </div>
         <div class="back-info">
-            <ul class="grid-info">
-                @foreach($comic_details as $info)
-                <li>
-                    <img src="{{ $info['url'] }}" alt="">
-                    <p>{{$info['title']}}</p>
-                </li>
-                @endforeach
-            </ul>
+            <div class="container">
+
+                <ul class="grid-info">
+                    @foreach($comic_details as $info)
+                    <li>
+                        <img src="{{ $info['url'] }}" alt="">
+                        <p>{{$info['title']}}</p>
+                    </li>
+                    @endforeach
+                </ul>
+            </div>
         </div>
     </section>
 </main>
