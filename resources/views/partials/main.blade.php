@@ -248,8 +248,8 @@ $comic_details = [
         <div class="back-grd">
             <div class="container">
 
-                <button>
-                    load more
+                <button class="btn-up-grid">
+                    current series
                 </button>
                 <div class="grid">
                     @foreach($comics as $comic)
@@ -259,7 +259,7 @@ $comic_details = [
                     </div>
                     @endforeach
                 </div>
-                <button>
+                <button class="btn-bottom-grid">
                     load more
                 </button>
             </div>
