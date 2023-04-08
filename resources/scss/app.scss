@@ -228,3 +228,53 @@ menu {
         left: 220px;
     }
 }
+
+.row-delux {
+    display: flex;
+    gap: 25px;
+    padding: 30px 0;
+}
+
+.btn-green {
+    display: flex;
+
+}
+
+.btn-price {
+    flex-grow: 8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(60, 181, 60);
+
+    p {
+        margin: 0;
+        padding: 0;
+        text-transform: uppercase;
+        color: rgb(64, 220, 64);
+        font-weight: 700;
+        font-size: 13px;
+
+        span {
+            color: white;
+            font-weight: 700;
+            font-size: 13px;
+        }
+
+    }
+}
+
+
+.btn-ceck {
+    background-color: rgb(60, 181, 60);
+    flex-grow: 1;
+    border-left: 1px solid black;
+    color: white;
+}
+
+.col-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+}

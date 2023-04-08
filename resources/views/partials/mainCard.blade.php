@@ -253,32 +253,46 @@
                     </figure>
                 </div>
             </div>
-            <div class="back-grd">
-                <div class="container positions">
-                    <div class="grid">
-                        @foreach($comics as $comic)
-                        <div class="cardDc">
-                            <img src="{{ $comic['thumb'] }}" alt="">
-                            <p>{{$comic['series']}}</p>
+            <div class="card-description">
+                <div class="container">
+                    <div class="row-delux">
+                        @foreach ($comics as $comic)
+                        <div class="col-text">
+                            <h3 class="my-3">
+                                {{ $comic['title'] }}
+                            </h3>
+                            <div class="btn-green">
+                                <button class="p-2 btn-price">
+                                    <p>
+                                        U.S Price:
+                                        <span>
+                                            {{ $comic['price'] }}
+
+                                        </span>
+
+                                    </p>
+                                    <p>
+                                        available
+                                    </p>
+                                </button>
+                                <button class="p-2 btn-ceck">
+                                    check availability
+                                    <i class="fa-solid fa-sort-down"></i>
+                                </button>
+                            </div>
+                            <p class="my-3">
+                                {{ $comic['description'] }}
+                            </p>
+                        </div>
+                        <div class="col-4">
+                            <p class="text-uppercase mb-0 fw-semibold">advertisement</p>
+                            <figure>
+                                <img src="{{ Vite::asset('resources/images/heroic.jpg') }}" alt="">
+
+                            </figure>
                         </div>
                         @endforeach
                     </div>
-                    <button class="btn-bottom-grid">
-                        load more
-                    </button>
-                </div>
-            </div>
-            <div class="back-info">
-                <div class="container">
-
-                    <ul class="grid-info mb-0">
-                        @foreach($comic_details as $info)
-                        <li>
-                            <img src="{{ $info['url'] }}" alt="">
-                            <p>{{$info['title']}}</p>
-                        </li>
-                        @endforeach
-                    </ul>
                 </div>
             </div>
         </section>
