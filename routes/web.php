@@ -19,3 +19,8 @@ Route::get('/', function () {
 
     return view('dcComics');
 });
+
+Route::get('/comicsCard', function () {
+
+    return view('comicsCard');
+});
