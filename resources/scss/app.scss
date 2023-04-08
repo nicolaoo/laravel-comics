@@ -38,7 +38,7 @@ menu {
 
     ul {
         display: flex;
-        gap: 15px;
+        gap: 25px;
         margin: 0;
         padding: 0;
         align-items: center;
@@ -192,5 +192,24 @@ menu {
                 margin: 0;
             }
         }
+    }
+}
+
+
+// HEADER CARD //
+
+.row-up-head {
+    padding: 5px 0;
+    background-color: #0074e8;
+
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 20px;
+        color: white;
+        text-transform: uppercase;
+        margin: 0;
+        font-size: 10px;
     }
 }
