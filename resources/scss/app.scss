@@ -213,3 +213,18 @@ menu {
         font-size: 10px;
     }
 }
+
+// MAINCARD //
+
+.row-blue-main {
+    background-color: #0074e8;
+    padding: 30px 0;
+    position: relative;
+
+    img {
+        position: absolute;
+        bottom: 12px;
+        width: 13%;
+        left: 220px;
+    }
+}
