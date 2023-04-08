@@ -256,17 +256,18 @@
             <div class="card-description">
                 <div class="container">
                     <div class="row-delux">
-                        @foreach ($comics as $comic)
+                        @foreach ($comics as $comic => $value)
+                        @if($comic === array_key_first($comics))
                         <div class="col-text">
                             <h3 class="my-3">
-                                {{ $comic['title'] }}
+                                {{ $value['title'] }}
                             </h3>
                             <div class="btn-green">
                                 <button class="p-2 btn-price">
                                     <p>
                                         U.S Price:
                                         <span>
-                                            {{ $comic['price'] }}
+                                            {{ $value['price'] }}
 
                                         </span>
 
@@ -281,7 +282,7 @@
                                 </button>
                             </div>
                             <p class="my-3">
-                                {{ $comic['description'] }}
+                                {{ $value['description'] }}
                             </p>
                         </div>
                         <div class="col-4">
@@ -291,6 +292,7 @@
 
                             </figure>
                         </div>
+                        @endif
                         @endforeach
                     </div>
                 </div>
